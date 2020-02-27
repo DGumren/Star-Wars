@@ -3,20 +3,22 @@ body {
 
   background-repeat: unset;
 }
-.card {
-  width: 300px;
-}
 .card-img-top {
   height: 200px;
+  width: 250px;
 }
 .navbar-nav {
-  margin-left: 1050px;
+  margin-left: 1150px;
   text-align: right;
 }
-.row {
-  margin-left: 1050px;
-  text-align: right;
+.box1 {
+  width: 90%;
+  margin: auto;
+  overflow: auto;
 }
-.d-flex flex-row {
-  margin-left: 1050px;
+.subtitle {
+  color: azure;
+  height: 120px;
+  text-align: center;
+  padding-top: 35px;
 }

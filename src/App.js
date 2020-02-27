@@ -7,21 +7,43 @@ const App = () => {
   return (
     <React.Fragment>
       <StarWars />
-      <div className="row">
-        <h3>
-          <font color="white">Characters</font>
-        </h3>
+      <div>
+        <h1 className="subtitle">Characters</h1>
       </div>
-      <div className="d-flex flex-row">
-        <Card />
+      <div className="box2 container">
+        <div className="row">
+          <div className="box1 d-flex flex-col flex-nowrap">
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+          </div>
+        </div>
       </div>
-      <div className="row">
-        <h3>
-          <font color="white">Planets</font>
-        </h3>
+      <div>
+        <h1 className="subtitle">Planets</h1>
       </div>
-      <div className="d-flex flex-row">
-        <Card />
+      <div className="box2 container">
+        <div className="row">
+          <div className="box1 d-flex flex-col flex-nowrap">
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+          </div>
+        </div>
       </div>
     </React.Fragment>
   );
