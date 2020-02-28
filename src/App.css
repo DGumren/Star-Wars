@@ -22,3 +22,11 @@ body {
   text-align: center;
   padding-top: 35px;
 }
+.input-group {
+  padding-top: 80px;
+  width: 80%;
+  margin: auto;
+}
+.btn btn-outline-warning {
+  margin: auto;
+}

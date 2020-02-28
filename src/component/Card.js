@@ -1,4 +1,5 @@
 import React from "react";
+import heartOutline from "../Assets/heart-outline.svg";
 
 const Card = () => {
   return (
@@ -10,14 +11,17 @@ const Card = () => {
           alt="This is an img"
         />
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a class="btn btn-primary" href="...">
-            Go somewhere
-          </a>
+          <h5 class="card-title">Character:</h5>
+          <p class="card-text">Star Wars</p>
+          <div class="d-flex justify-content-around">
+            <a class="btn btn-primary" href="...">
+              Learn More
+            </a>
+
+            <button type="button" class="btn btn-outline-warning">
+              <img src={heartOutline} alt="favorites"></img>
+            </button>
+          </div>
         </div>
       </div>
     </div>
