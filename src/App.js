@@ -7,12 +7,15 @@ const App = () => {
   const [details, setDetails] = useState(null);
   const [charcters, setCharacters] = useState([]);
   useEffect(() => {
-    fetch("http swapi.co/api/planets/People")
-      .then(res => res.json)
+    fetch("https://swapi.co/api/people")
+      .then(res => res.json())
       .then(res =>
         setCharacters(
           res.results.map((character, id) => ({
-            name: character.name
+            name: character.name,
+            gender: character.gender,
+            hairColor: character.hair_color,
+            eyeColor: character.eye_color
           }))
         )
       );
@@ -40,6 +43,18 @@ const App = () => {
       <div className="box2 container">
         <div className="row">
           <div className="box1 d-flex flex-col flex-nowrap">
+            {charcters.map((character, index) => {
+              return (
+                <PeopleCard
+                  key={index}
+                  name={character.name}
+                  eyeColor={character.eyeColor}
+                  hairColor={character.hairColor}
+                  gender={character.gender}
+                />
+              );
+            })}
+            {/* <PeopleCard />
             <PeopleCard />
             <PeopleCard />
             <PeopleCard />
@@ -48,8 +63,7 @@ const App = () => {
             <PeopleCard />
             <PeopleCard />
             <PeopleCard />
-            <PeopleCard />
-            <PeopleCard />
+            <PeopleCard /> */}
           </div>
         </div>
       </div>

@@ -1,8 +1,7 @@
 import React from "react";
 import heartOutline from "../Assets/heart-outline.svg";
-import PropTypes from "Prop-Types";
 
-const PeopleCard = () => {
+const PeopleCard = props => {
   return (
     <div className="container mt-3">
       <div className="row">
@@ -14,11 +13,12 @@ const PeopleCard = () => {
               alt="..."
             />
             <div className="card-body">
-              <h5 className="card-title">People</h5>
-              <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
+              <h5 className="card-title"> {props.name} </h5>
+              <div className="card-text">
+                <p>Hair color: {props.hairColor}</p>
+                <p>Eye color: {props.eyeColor}</p>
+                <p>Gender: {props.gender}</p>
+              </div>
               <a href="#" className="btn btn-primary">
                 Learn More
               </a>
@@ -32,10 +32,6 @@ const PeopleCard = () => {
       </div>
     </div>
   );
-};
-
-character.propTypes = {
-  character: PropTypes.object.isRequired
 };
 
 export default PeopleCard;
